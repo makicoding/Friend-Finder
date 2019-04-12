@@ -1,4 +1,58 @@
-// ----------------------------------------
+// ----------------------------------------------------------------------------------------------------
+// BOILERPLATE CODE STARTS HERE
+// (Boilerplate code is a section of code that has to be included in with little or no alteration)
+
+// ================================================================================
+// DEPENDENCIES
+// Series of npm packages that we will use to give our server useful functionality
+// ================================================================================
+
+var express = require("express");
+var bodyParser = require("body-parser");
+
+// ================================================================================
+// EXPRESS CONFIGURATION
+// This sets up the basic properties for our express server
+// ================================================================================
+
+// Tells node that we are creating an "express" server
+var app = express();
+
+// Sets an initial port. We'll use this later in our listener
+
+var PORT = process.env.PORT || 8080;        // Need to assign process.env.PORT for Heroku.  process.env.PORT will let Heroku assign
+                                            // a port at random.  If that is unavailable, then the port will be assigned to port 8080
+                                            // which is the standard default second choice for a webserver.
+
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+// ================================================================================
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+// ================================================================================
+// LISTENER
+// The below code effectively "starts" our server
+// ================================================================================
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
+});
+
+
+
+// BOILER PLATE CODE ENDS HERE
+
+
+
+// ----------------------------------------------------------------------------------------------------
 // INSTRUCTIONS AND ADDITIONAL NOTES
 
 /*
@@ -70,8 +124,8 @@ To check that everything installed properly, type the following into the command
 
 Then check under "dependencies" that is displayed in the command line. If everything installed
 properly it will say:
-"inquirer": "^6.2.2",     // 6.2.2 is the version number
-"mysql": "^2.16.0"        // 2.16.0 is the version number
+"body-parser": "^1.18.3",     // 1.18.3 is the version number
+"express": "^4.16.4",     // 4.16.4 is the version number
 
 
 
