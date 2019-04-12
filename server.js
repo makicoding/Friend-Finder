@@ -89,19 +89,6 @@ and the command line will ask you about the settings for each.
 
 
 --------------------
-TEMPLATE LITERALS
-
-`string ${} string` format of writing code is a template literal.
-
-Example:
-    var totalQuantity = 3 * 2;
-    console.log(`The total quantity is: ${totalQuantity}`);
-        
-    // "The total quantity is: 6" would be printed to the console.
-
-
-
---------------------
 COMMAND LINE commands
 
 Before running this JS file in node, install packages from npmjs.com type the following 
