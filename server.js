@@ -34,8 +34,8 @@ app.use(bodyParser.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // ================================================================================
 // LISTENER
@@ -48,7 +48,7 @@ app.listen(PORT, function() {
 
 
 
-// BOILER PLATE CODE ENDS HERE
+// BOILERPLATE CODE ENDS HERE
 
 
 
@@ -112,7 +112,8 @@ To check that everything installed properly, type the following into the command
 Then check under "dependencies" that is displayed in the command line. If everything installed
 properly it will say:
 "body-parser": "^1.18.3",     // 1.18.3 is the version number
-"express": "^4.16.4",     // 4.16.4 is the version number
+"express": "^4.16.4",         // 4.16.4 is the version number
+"path": "^0.12.7"             // 0.12.7 is the version number
 
 
 
@@ -123,6 +124,7 @@ npm i                    // npm i is just a shortcut version of npm install.
 This will install everything listed in the dependencies area of the package.json file.
 You don't need to manually install every npm package like:
 npm install express   // or:
+npm install path      // or:
 npm install body-parser        // etc.
 
 
@@ -147,6 +149,15 @@ By using nodemon any changes you make to the server JS file will update on the s
 
 Run nodemon by typing into terminal:
 nodemon server.js (or nodemon server)
+
+
+
+--------------------
+IN THE BROWSER
+
+After running either node server or nodemon server, go to the Chrome Browser and type in:
+http://localhost:8080
+to connect to port 8080
 
 
 
