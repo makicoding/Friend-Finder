@@ -1,6 +1,6 @@
 # Friend-Finder
 
-[Click here to view deployed app on Heroku](https://makicoding-friend-finder.herokuapp.com/api/friends)
+[Click here to view deployed app on Heroku](https://makicoding-friend-finder.herokuapp.com/)
 <br></br>
 ***
 
