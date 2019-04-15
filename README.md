@@ -2,7 +2,7 @@
 
 [Click here to view deployed app on Heroku](https://makicoding-friend-finder.herokuapp.com/)
 ***
-Friend Finder implements friend matching based on the user's responses to a ten question survey. The app simulates a similar experience to a simple dating app.
+In this app, friend matching is made based on the user's responses to a ten question survey. The app simulates a similar experience to a dating app.
 
 The user must respond to ten questions with values of 1 (Strongly Disagree) to 5 (Strongly Agree). When the questionnaire is submited, the script will match the user with the existing user record and select a friend who is the best match.
 
