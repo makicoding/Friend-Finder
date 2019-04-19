@@ -124,9 +124,9 @@ npm install  // or:
 npm i                    // npm i is just a shortcut version of npm install.
 This will install everything listed in the dependencies area of the package.json file.
 You don't need to manually install every npm package like:
-npm install express   // or:
-npm install path      // or:
-npm install body-parser        // etc.
+npm install express       // or:
+npm install body-parser   // or:     
+npm install path                  // etc.
 
 
 
