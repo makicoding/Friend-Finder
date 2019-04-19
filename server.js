@@ -95,6 +95,7 @@ Before running this JS file in node, install packages from npmjs.com type the fo
 into the command line (the name npm stands for Node Package Manager):
 // npm install express
 // npm install body-parser
+// npm install path
 
 
 
