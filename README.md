@@ -8,4 +8,4 @@ The user must respond to ten questions with values of 1 (Strongly Disagree) to 5
 
 This app uses Node and Express server on the back end, and Bootstrap framework on the front end.
 
-Technologies used: HTML, CSS, JavaScript, jQuery, RESTful API, JSON, AJAX, Node, Express, Heroku.
+Technologies used: HTML, CSS, JavaScript, Bootstrap, jQuery, RESTful API, JSON, AJAX, Node, Express, Heroku.
