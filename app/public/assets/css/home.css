@@ -1,0 +1,87 @@
+.backgroundImage {
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    z-index: -2;
+}
+
+.backplate {
+    width: 300px;;
+    height: 320px;
+
+    border: 1px solid #cecece;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+
+    background-color: white;
+
+    opacity: 0.9;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150px, -160px);
+
+    z-index: -1
+}
+
+.indexPageTextContent {
+    width: 300px;;
+    height: 320px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150px, -145px);
+}
+
+.indexPageTextContentMiddleText {    
+    position: relative;
+    top: 6px;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* MEDIA QUERIES */
+/* When Screen Size Max-Width is 1030px */
+/* (1024px is viewport width of iPad Pro in vertical) */
+/* (1366px is viewport height of iPad Pro in vertical) */
+@media screen and (max-width: 1030px) {
+
+    .backgroundImage {
+        width: auto;
+        height: 100%;
+    
+        position: fixed;
+        left: -550px;
+    }
+
+}
+
+/* -------------------- */
+
+/* When Screen Size Max-Width is 980px */
+/* (768px is viewport width of iPad in vertical) */
+/* (1024px is viewport height of iPad in vertical) */
+@media screen and (max-width: 980px) {
+
+    .backgroundImage {  
+        position: fixed;
+        left: -420px;
+    }
+
+}
+
+/* -------------------- */
+
+/* When Screen Size Max-Width is 750px */
+/* (375px is viewport width of iPhone X in vertical) */
+@media screen and (max-width: 750px) {
+
+    .backgroundImage {  
+        position: fixed;
+        left: -445px;
+    }
+
+}
